@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seattle Seasons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<section id="landing">
+    <div class="image">
+            <div class="overlay-text">The Seasons of</div>
+        <div class="overlay-text1">SEATTLE</div>
+        <img src="images/Space%20Needle%20Title%20Page.png"/>
+    </div>
+    <div class="about">
+
+        <div class="toolbar">
+            <button data-target="#autumn">Autumn</button>
+            <button data-target="#winter">Winter</button>
+            <button data-target="#spring">Spring</button>
+            <button data-target="#summer">Summer</button>
+        </div>
+        <h1 class="header1">ABOUT</h1>
+        <p style="margin-top: -60px" class="AboutText">Welcome to the Emerald City, where every season brings its unique charm to the vibrant city of Seattle!
+            Whether you're a coffee connoisseur, a nature enthusiast, or a culture seeker, Seattle has something special
+            in store for you year-round. From the crisp colors of fall to the cozy winters, the blooming springs, and the
+            sun-kissed summers, Seattle's diverse seasons offer a plethora of activities that will leave you enchanted.
+            So, pack your bags, grab your umbrella (just in case), and let's embark on a year-round journey through this
+            Pacific Northwest gem. No matter the season, Seattle's warm hospitality and endless adventures await.</p>
+        <h1 class="header1">WHEN ARE YOU</h1>
+        <h1 style="margin-top: -80px" class="header1">LOOKING TO VISIT?</h1>
+        <div class="button-container">
+        <button class="navButt" data-target="#autumn">Autumn</button>
+        <button class="navButt" data-target="#winter">Winter</button>
+        <button class="navButt" data-target="#spring">Spring</button>
+        <button class="navButt" data-target="#summer">Summer</button>
+            </div>
+    </div>
+
+</section>
+
+<section id="autumn" class="season">
+    <h2 class="title" style="margin-left:-35px; margin-top: 310px;">AUTUMN</h2>
+    <div class="seasonTextBox">
+    <h3 class="seasonTextBlurb">As the leaves turn fiery shades of red and gold, Seattle is transformed into a cozy haven for fall enthusiasts.
+        Here are some must-do activities: </h3>
+    </div>
+
+    <div class="activityTextbox">
+    <h2 class="activityHeader">Fall Foliage at Discovery Park</h2>
+        <p class="activityDescription">
+            Take a leisurely stroll through Discovery Park, where you can witness the breathtaking contrast of colorful
+            leaves against the backdrop of Puget Sound and the Olympic Mountains.
+        </p>
+    </div>
+    <img class="activityImage" src="images/Autumn%201.png" ; onclick="openModal()"/>
+
+
+
+
+
+
+
+
+    <!-- The Modal - Autumn 1-->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <h2 id="modalTitle">Fall Foliage at Discovery Park</h2> <!-- Title -->
+            <img id="modalImg" src="images/Autumn%201.png"> <!-- Image -->
+            <p id="modalDesc">Discover the enchanting beauty of fall foliage at Discovery Park, Seattle's largest public park.
+                Meander through the lush, wooded trails as you're surrounded by a breathtaking mosaic of red, orange, and yellow leaves.
+                The park's location on the shores of Puget Sound offers stunning vistas of the water, the Olympic Mountains,
+                and the city skyline, making it a perfect spot for capturing the essence of fall.
+            </p> <!-- Description -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Pike Place Market</h2>
+        <p class="activityDescription">
+            Explore the bustling market, where vendors showcase fall's bounty of fresh produce.
+            Don't miss the apple cider and artisanal pumpkin treats.
+        </p>
+    </div>
+
+    <img class="activityImage" src="images/Autumn%202.png"/>
+
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Seattle Cider Tasting</h2>
+        <p class="activityDescription">
+            Discover the city's craft cider scene with tastings at local cideries. Savor the unique flavors of the season,
+            from spiced apple to cranberry-infused ciders.
+        </p>
+    </div>
+
+    <img class="activityImage" src="images/Autumn%203.png"/>
+</section>
+
+
+
+
+<section id="winter" class="season">
+    <h2 class="title" style=" margin-top: 310px;">WINTER</h2>
+    <div class="seasonTextBox">
+        <h3 class="seasonTextBlurb">When winter arrives, Seattle becomes a magical wonderland with its blend of holiday
+            cheer and Pacific Northwest charm. Here's what to do: </h3>
+    </div>
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Snowy Adventures in the Cascades</h2>
+        <p class="activityDescription">
+            Just a short drive from the city, you can ski or snowboard in the Cascade
+            Mountains. Snoqualmie Pass offers excellent slopes for winter sports enthusiasts.
+        </p>
+    </div>
+    <img class="activityImage" src="images/Winter%201.1.jpg"/>
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Chihuly Garden and Glass</h2>
+        <p class="activityDescription">
+            Embrace the warmth of indoor artistry at the Chihuly Garden and Glass Museum in the Seattle Center. Explore
+            a world of vibrant glass art, with the Glasshouse showcasing a breathtaking suspended sculpture.
+        </p>
+    </div>
+
+    <img class="activityImage" src="images/Winter%202.png"/>
+
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Cozy Café Hopping</h2>
+        <p class="activityDescription">
+            Warm up in Seattle's numerous cozy coffee shops and tea houses. Try unique blends, artisanal hot chocolates,
+            and enjoy the comforting ambiance.
+        </p>
+    </div>
+
+    <img class="activityImage" src="images/Winter%203.png"/>
+</section>
+
+<section id="spring" class="season">
+    <h2 class="title" style="margin-left: 10px; margin-top: 310px;">SPRING</h2>
+    <div class="seasonTextBox">
+        <h3 class="seasonTextBlurb">As the city awakens from its winter slumber, Seattle bursts into bloom during springtime.
+            Here's how to make the most of it: </h3>
+    </div>
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Cherry Blossom Viewing</h2>
+        <p class="activityDescription">
+            Head to the University of Washington's Quad to witness the mesmerizing cherry blossoms in full bloom, a sight
+            that rivals Japan's sakura season.
+        </p>
+    </div>
+    <img class="activityImage" src="images/Spring%201.1.jpg"/>
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Mount Rainier</h2>
+        <p class="activityDescription">
+            Explore the lush trails of Mount Rainier National Park as they start to thaw. The wildflower displays are a
+            photographer's dream.</p>
+    </div>
+
+    <img class="activityImage" src="images/Spring%202.png"/>
+
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Boat Tour on Lake Washington</h2>
+        <p class="activityDescription">
+            Enjoy a scenic boat tour on Lake Washington as the city's parks and waterfronts come alive with vibrant colors.
+        </p>
+    </div>
+
+    <img class="activityImage" src="images/Spring%203.png"/>
+</section>
+
+<section id="summer" class="season">
+    <h2 class="title" style="margin-left:-50px; margin-top: 325px">SUMMER</h2>
+    <div class="seasonTextBox">
+        <h3 class="seasonTextBlurb">When summer arrives, Seattle's natural beauty shines brightest, and outdoor adventures abound.
+            Here's why you should visit during this season:</h3>
+    </div>
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Alki Beach</h2>
+        <p class="activityDescription">
+            Soak up the sun at Alki Beach, where you can swim, kayak, or simply relax on the sandy shore while taking in
+            panoramic views of the city.
+        </p>
+    </div>
+    <img class="activityImage" src="images/Summer%201.png"/>
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Olympic National Park</h2>
+        <p class="activityDescription">
+            Summer hiking in Olympic National Park offers diverse landscapes, from lush rainforests to alpine meadows
+            and rugged coastlines. </p>
+    </div>
+
+    <img class="activityImage" src="images/Summer%202.png"/>
+
+
+    <div class="activityTextbox">
+        <h2 class="activityHeader">Ferry to the San Juan Islands</h2>
+        <p class="activityDescription">
+            Take a ferry ride to the picturesque San Juan Islands, where you can spot whales, kayak in pristine waters,
+            and explore charming island communities.</p>
+    </div>
+
+    <img class="activityImage" src="images/Summer%203.png"/>
+    <!-- Add content -->
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</body>
+
+</html>
