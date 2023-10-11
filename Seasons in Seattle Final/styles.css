@@ -1,0 +1,397 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+#landing {
+    display: flex;
+}
+
+#landing .image {
+    position: relative;
+    flex: 1 0 auto;
+    background-size: cover;
+
+}
+
+#landing .about {
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.overlay-text {
+    position: absolute;
+    z-index: 10;
+    margin-top: 85px;
+
+    margin-left: 275px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: "PT Sans Narrow";
+}
+.overlay-text1 {
+    position: absolute;
+    z-index: 10;
+    margin-top: 125px;
+    margin-left: 250px;
+    color: white;
+    font-size: 85px;
+    font-family: "DIN Condensed";
+    text-align: center;
+}
+
+.toolbar button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-family: "PT Sans Narrow";
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.season {
+    position: relative;
+    padding-top: 50px;
+}
+
+.season .title {
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    transform:  rotate(270deg);
+    font-size: 300px;
+    font-family: "DIN Condensed";
+    color: white;
+    white-space: nowrap;
+}
+
+.seasonTextBox {
+    width: 1017px;
+    margin-left: 350px;
+}
+
+.seasonTextBlurb {
+    font-family: Arial;
+    color: white;
+    font-size: 27px;
+}
+.activityTextbox{
+    width: 500px;
+    margin-left: 350px;
+
+    margin-top: 100px;
+}
+
+.activityHeader {
+    font-family: "PT Sans Narrow";
+    color: white;
+    font-size: 48px;
+}
+.activityDescription{
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+}
+
+.activityImage {
+    width: 404px;
+    height: 227px;
+    border-radius: 30px;
+    margin-top: -200px;
+    margin-left: 65%;
+}
+
+#landing {
+    background-color: #8FBFD6;
+}
+
+#autumn {
+    height: 1200px;
+    background-color: #8A605A;
+}
+
+#winter {
+    height: 1200px;
+    background-color: #123E54;
+}
+
+#spring {
+    height: 1200px;
+    background-color: #D4A597;
+}
+
+#summer {
+    height: 1200px;
+    background-color: #509FBE;
+}
+
+.header1 {
+    font-size: 75px;
+    font-family: "DIN Condensed";
+    color: #226881;
+}
+
+.AboutText {
+    font-size: 18px;
+    color: #154D61;
+    font-family: Arial;
+    max-width: 700px;
+}
+.button-container {
+    display: grid;
+    max-width: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.navButt {
+    width: 180px;
+    height: 90px;
+    border-color: transparent;
+    background-color: #C3D3DE;
+border-radius: 14px;
+    font-family: "PT Sans Narrow";
+    font-size: 35px;
+    color: #154D61;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 856px;
+    border-radius: 15px;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+
+.modal-content {
+    position: relative;
+    color: white;
+}
+
+.modal-content h2 {
+    margin-left: 80px;
+    font-size: 45px;
+    font-family: "PT Sans Narrow";
+}
+
+.modal-content img {
+    display: block;
+    margin: 20px auto;
+    width: 944px;
+    height: 481px;
+    border-radius: 30px;
+}
+
+.modal-content p {
+    margin-left: 80px;
+    width: 944px;
+    font-size: 20px;
+    font-family: "Arial";
+    color: white;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1002;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body-modal-open {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7); }
+
+@media only screen and (max-width: 1220px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        margin-bottom: -35vh;
+        height: 130vh;
+        width: 100%;
+    }
+
+    .modal {
+        width: 80%;
+        height: auto;
+    }
+
+    .modal-content h2 {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 45px;
+        font-family: "PT Sans Narrow";
+    }
+
+    .seasonTextBlurb{
+        width: 95%;
+
+
+    }
+    .activityDescription {
+        width: 85%;
+    }
+
+    .modal-content img {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        height: 10%;
+        border-radius: 30px;
+    }
+
+    .modal-content p {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 20px;
+        font-family: "Arial";
+        color: white;
+    }
+
+
+    .toolbar button {
+        display: none;
+    }
+
+    .header1 {
+        font-size: 60px;
+        font-family: "DIN Condensed";
+        color: #226881;
+    }
+
+
+    #landing {
+        height: auto;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    #landing .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #landing .about {
+        padding: 20px;
+    }
+
+    .season {
+        padding-top: 0;
+    }
+
+    .season .title {
+        position: static;
+        transform: none;
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0px;
+        font-family: "DIN Condensed";
+        color: white;
+        white-space: nowrap;
+        padding-top: 45px;
+    }
+
+    .seasonTextBox, .activityTextbox {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .activityImage {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #autumn {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #8A605A;
+    }
+
+    #winter {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #123E54;
+    }
+
+    #spring {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #D4A597;
+    }
+
+    #summer {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #509FBE;
+    }
+
+    .AboutText {
+        font-size: 18px;
+        color: #154D61;
+        font-family: Arial;
+        padding-top: 60px;
+        margin-bottom: 10px;
+    }
+    .button-container{
+        padding-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
