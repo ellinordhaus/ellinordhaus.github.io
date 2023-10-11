@@ -14,21 +14,22 @@ section {
 
 #landing .image {
     position: relative;
-    flex: 1;
-    background: url('path-to-your-image.jpg') no-repeat center center;
+    flex: 1 0 auto;
     background-size: cover;
+
 }
 
 #landing .about {
-    flex: 1;
+    flex: 1 1 auto;
     padding: 20px;
 }
 
 .overlay-text {
     position: absolute;
-    top: 80px;
-    left: 49.4%;
-    transform: translate(-50%, -50%);
+    z-index: 10;
+    margin-top: 85px;
+
+    margin-left: 275px;
     color: white;
     font-size: 2em;
     text-align: center;
@@ -36,9 +37,9 @@ section {
 }
 .overlay-text1 {
     position: absolute;
-    top: 155px;
-    left: 49.4%;
-    transform: translate(-50%, -50%);
+    z-index: 10;
+    margin-top: 125px;
+    margin-left: 250px;
     color: white;
     font-size: 85px;
     font-family: "DIN Condensed";
@@ -83,8 +84,9 @@ section {
     font-size: 27px;
 }
 .activityTextbox{
-    width: 545px;
+    width: 500px;
     margin-left: 350px;
+
     margin-top: 100px;
 }
 
@@ -141,13 +143,16 @@ section {
     font-size: 18px;
     color: #154D61;
     font-family: Arial;
+    max-width: 700px;
 }
 .button-container {
-    margin-top: -50px;
+    display: grid;
+    max-width: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
 }
-
 .navButt {
-    margin: 10px;
     width: 180px;
     height: 90px;
     border-color: transparent;
@@ -160,27 +165,33 @@ border-radius: 14px;
 
 
 
-
-
-
-
-
-/* The Modal */
 .modal {
-    display: block;
+    display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1001;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 1140px;
     height: 856px;
     border-radius: 15px;
-    background-color: #624949624949; /* 70% opacity black background */
     overflow: auto;
     padding: 20px;
     box-sizing: border-box;
 }
+
+
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
 
 .modal-content {
     position: relative;
@@ -188,26 +199,27 @@ border-radius: 14px;
 }
 
 .modal-content h2 {
-    margin: 0;
-    font-size: 45px; /* Adjust as needed */
+    margin-left: 80px;
+    font-size: 45px;
     font-family: "PT Sans Narrow";
 }
 
 .modal-content img {
     display: block;
     margin: 20px auto;
-    max-width: 944px;
-    max-height: 481px;
+    width: 944px;
+    height: 481px;
     border-radius: 30px;
 }
 
 .modal-content p {
-    font-size: 20px; /* Adjust as needed */
-    font-family: "PT Sans Narrow";
+    margin-left: 80px;
+    width: 944px;
+    font-size: 20px;
+    font-family: "Arial";
     color: white;
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -216,6 +228,7 @@ border-radius: 14px;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    z-index: 1002;
 }
 
 .close:hover,
@@ -225,11 +238,151 @@ border-radius: 14px;
     cursor: pointer;
 }
 
-/* Background overlay when modal is open */
 body-modal-open {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7); /* 70% opacity black background */
+    background-color: rgba(0, 0, 0, 0.7); }
 
+@media only screen and (max-width: 1220px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        margin-bottom: -35vh;
+        height: 130vh;
+        width: 100%;
+    }
+
+    .modal {
+        width: 80%;
+        height: auto;
+    }
+
+    .modal-content h2 {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 45px;
+        font-family: "PT Sans Narrow";
+    }
+
+    .seasonTextBlurb{
+        width: 95%;
+
+
+    }
+    .activityDescription {
+        width: 85%;
+    }
+
+    .modal-content img {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        height: 10%;
+        border-radius: 30px;
+    }
+
+    .modal-content p {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 20px;
+        font-family: "Arial";
+        color: white;
+    }
+
+
+    .toolbar button {
+        display: none;
+    }
+
+    .header1 {
+        font-size: 60px;
+        font-family: "DIN Condensed";
+        color: #226881;
+    }
+
+
+    #landing {
+        height: auto;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    #landing .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #landing .about {
+        padding: 20px;
+    }
+
+    .season {
+        padding-top: 0;
+    }
+
+    .season .title {
+        position: static;
+        transform: none;
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0px;
+        font-family: "DIN Condensed";
+        color: white;
+        white-space: nowrap;
+        padding-top: 45px;
+    }
+
+    .seasonTextBox, .activityTextbox {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .activityImage {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    #autumn {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #8A605A;
+    }
+
+    #winter {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #123E54;
+    }
+
+    #spring {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #D4A597;
+    }
+
+    #summer {
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #509FBE;
+    }
+
+    .AboutText {
+        font-size: 18px;
+        color: #154D61;
+        font-family: Arial;
+        padding-top: 60px;
+        margin-bottom: 10px;
+    }
+    .button-container{
+        padding-top: 30px;
+    }
+}
 
 
 
