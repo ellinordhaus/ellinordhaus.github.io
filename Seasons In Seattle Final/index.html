@@ -10,11 +10,13 @@
 
 <body>
 
+
 <section id="landing">
     <div class="image">
-            <div class="overlay-text">The Seasons of</div>
-        <div class="overlay-text1">SEATTLE</div>
-        <img src="images/Space%20Needle%20Title%20Page.png"/>
+        <img src="images/Seattle%20Home%20Page%20Image%20FINAL%20FINAL.png"/>
+
+
+
     </div>
     <div class="about">
 
@@ -31,8 +33,7 @@
             sun-kissed summers, Seattle's diverse seasons offer a plethora of activities that will leave you enchanted.
             So, pack your bags, grab your umbrella (just in case), and let's embark on a year-round journey through this
             Pacific Northwest gem. No matter the season, Seattle's warm hospitality and endless adventures await.</p>
-        <h1 class="header1">WHEN ARE YOU</h1>
-        <h1 style="margin-top: -80px" class="header1">LOOKING TO VISIT?</h1>
+        <h1 class="header1">WHEN ARE YOU <br> LOOKING TO VISIT?</h1>
         <div class="button-container">
         <button class="navButt" data-target="#autumn">Autumn</button>
         <button class="navButt" data-target="#winter">Winter</button>
@@ -57,7 +58,10 @@
             leaves against the backdrop of Puget Sound and the Olympic Mountains.
         </p>
     </div>
-    <img class="activityImage" src="images/Autumn%201.png" ; onclick="openModal()"/>
+    <img class="activityImage" src="images/Autumn%201.png" ; onclick="openModal('Fall Foliage at Discovery Park', 'images/Autumn%201.png', 'Discover the enchanting beauty of fall foliage at Discovery Park, Seattle\'s largest public park.'+
+'                Meander through the lush, wooded trails as you\'re surrounded by a breathtaking mosaic of red, orange, and yellow leaves.'+
+'                The park\'s location on the shores of Puget Sound offers stunning vistas of the water, the Olympic Mountains,'+
+'                and the city skyline, making it a perfect spot for capturing the essence of fall.', '#624949')"/>
 
 
 
@@ -66,18 +70,16 @@
 
 
 
-    <!-- The Modal - Autumn 1-->
+    <div id="modalBackdrop" class="modal-backdrop">
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <div class="modal-content">
-            <h2 id="modalTitle">Fall Foliage at Discovery Park</h2> <!-- Title -->
-            <img id="modalImg" src="images/Autumn%201.png"> <!-- Image -->
-            <p id="modalDesc">Discover the enchanting beauty of fall foliage at Discovery Park, Seattle's largest public park.
-                Meander through the lush, wooded trails as you're surrounded by a breathtaking mosaic of red, orange, and yellow leaves.
-                The park's location on the shores of Puget Sound offers stunning vistas of the water, the Olympic Mountains,
-                and the city skyline, making it a perfect spot for capturing the essence of fall.
-            </p> <!-- Description -->
+            <h2 id="modalTitle"></h2>
+            <img id="modalImg" src="">
+            <p id="modalDesc">
+            </p>
         </div>
+    </div>
     </div>
 
 
@@ -93,7 +95,7 @@
         </p>
     </div>
 
-    <img class="activityImage" src="images/Autumn%202.png"/>
+    <img class="activityImage" src="images/Autumn%202.png" ; onclick="openModal('Pike Place Market', 'images/Autumn%202.png', 'Pike Place Market comes alive with the colors and flavors of fall. Stroll through the bustling market and immerse yourself in the vibrant atmosphere. Farmers\' stalls overflow with crisp apples, plump pumpkins, and freshly harvested vegetables. Don\'t miss the chance to taste local apple cider or indulge in artisanal pumpkin treats crafted by skilled bakers and confectioners.', '#624949')"/>
 
 
     <div class="activityTextbox">
@@ -104,7 +106,7 @@
         </p>
     </div>
 
-    <img class="activityImage" src="images/Autumn%203.png"/>
+    <img class="activityImage" src="images/Autumn%203.png"; onclick="openModal('Seattle Cider Tasting', 'images/Autumn%203.png', 'Seattle\'s craft cider scene comes to life during the fall season. Venture to local cideries and savor the unique flavors of the season. From spiced apple ciders that warm the soul to cranberry-infused concoctions that tantalize the taste buds, you\'ll discover a diverse array of cider offerings that celebrate the best of fall\'s harvest.', '#624949')"/>
 </section>
 
 
@@ -124,7 +126,7 @@
             Mountains. Snoqualmie Pass offers excellent slopes for winter sports enthusiasts.
         </p>
     </div>
-    <img class="activityImage" src="images/Winter%201.1.jpg"/>
+    <img class="activityImage" src="images/Winter%201.1.jpg" ; onclick="openModal('Snowy Adventures in the Cascades', 'images/Winter%201.1.jpg', 'Just a short drive from Seattle, the Cascade Mountains transform into a winter wonderland. Whether you\'re a seasoned skier or a novice, Snoqualmie Pass offers excellent slopes and trails for winter sports enthusiasts. The glistening snow-covered landscape and crisp mountain air create a magical setting for outdoor adventures.' , '#1D5876')"/>
 
     <div class="activityTextbox">
         <h2 class="activityHeader">Chihuly Garden and Glass</h2>
@@ -134,7 +136,7 @@
         </p>
     </div>
 
-    <img class="activityImage" src="images/Winter%202.png"/>
+    <img class="activityImage" src="images/Winter%202.png" ; onclick="openModal('Chihuly Garden and Glass', 'images/Winter%202.png', 'Embrace the warmth of indoor artistry at the Chihuly Garden and Glass Museum in the Seattle Center during winter. Explore a world of vibrant glass art, with the Glasshouse showcasing a breathtaking suspended sculpture. Discover Chihuly\'s glass art in the outdoor gardens, where nature and art harmonize, making it an ideal winter cultural experience.', '#1D5876')"/>
 
 
     <div class="activityTextbox">
@@ -145,7 +147,7 @@
         </p>
     </div>
 
-    <img class="activityImage" src="images/Winter%203.png"/>
+    <img class="activityImage" src="images/Winter%203.png" ; onclick="openModal('Cozy Café Hopping', 'images/Winter%203.png', 'Seattle\'s love affair with coffee extends to the coziest of cafes, perfect for escaping the winter chill. Explore the city\'s vibrant coffee culture as you sample unique blends, artisanal hot chocolates, and handcrafted lattes. The warm, inviting ambiance of these cafes is a welcoming respite during the colder months.', '#1D5876')"/>
 </section>
 
 <section id="spring" class="season">
@@ -162,7 +164,7 @@
             that rivals Japan's sakura season.
         </p>
     </div>
-    <img class="activityImage" src="images/Spring%201.1.jpg"/>
+    <img class="activityImage" src="images/Spring%201.1.jpg" ; onclick="openModal('Cherry Blossom Viewing', 'images/Spring%201.1.jpg', 'Springtime in Seattle is a visual delight as cherry blossoms burst into full bloom. Head to the University of Washington\'s Quad, where you\'ll find rows of cherry trees covered in delicate pink and white blossoms. Strolling through this serene setting feels like stepping into a fairytale, making it a must-visit spot for nature lovers and photographers.', '#B88D81')"/>
 
     <div class="activityTextbox">
         <h2 class="activityHeader">Mount Rainier</h2>
@@ -171,7 +173,7 @@
             photographer's dream.</p>
     </div>
 
-    <img class="activityImage" src="images/Spring%202.png"/>
+    <img class="activityImage" src="images/Spring%202.png" ; onclick="openModal('Mountain Rainier', 'images/Spring%202.png', 'With the thawing of winter\'s snow, the lush trails of Mount Rainier National Park beckon hikers and outdoor enthusiasts. Spring is the perfect time to explore this pristine wilderness, where vibrant wildflowers carpet the meadows in a riot of colors. Hiking in this spectacular setting is a photographer\'s dream come true.', '#B88D81')"/>
 
 
     <div class="activityTextbox">
@@ -181,7 +183,7 @@
         </p>
     </div>
 
-    <img class="activityImage" src="images/Spring%203.png"/>
+    <img class="activityImage" src="images/Spring%203.png" ; onclick="openModal('Boat Tour on Lake Washington', 'images/Spring%203.png', 'As the city\'s parks and waterfronts come alive with vibrant colors, embark on a scenic boat tour on Lake Washington. Cruise along the crystal-clear waters while taking in breathtaking views of the Cascade Mountains. It\'s a serene and rejuvenating experience that allows you to connect with Seattle\'s natural beauty.', '#B88D81')"/>
 </section>
 
 <section id="summer" class="season">
@@ -198,7 +200,7 @@
             panoramic views of the city.
         </p>
     </div>
-    <img class="activityImage" src="images/Summer%201.png"/>
+    <img class="activityImage" src="images/Summer%201.png" ; onclick="openModal('Alki Beach', 'images/Summer%201.png', 'Alki Beach comes alive with sun-seekers during the summer months. Located across Elliott Bay from downtown Seattle, it offers a sandy oasis where you can swim, kayak, or simply relax under the sun. The backdrop of the Seattle skyline and the Olympic Mountains creates a picture-perfect setting for your summer adventures.', '#418BA8')"/>
 
     <div class="activityTextbox">
         <h2 class="activityHeader">Olympic National Park</h2>
@@ -207,7 +209,7 @@
             and rugged coastlines. </p>
     </div>
 
-    <img class="activityImage" src="images/Summer%202.png"/>
+    <img class="activityImage" src="images/Summer%202.png" ; onclick="openModal('Olympic National Park', 'images/Summer%202.png', 'Summer hiking in Olympic National Park offers diverse landscapes, from lush rainforests to alpine meadows and rugged coastlines. Explore the enchanting Hoh Rainforest with its mossy giants, capture stunning vistas at Hurricane Ridge, or hike along dramatic beaches like Shi Shi and Ruby Beach. With trails for all levels of hikers, it\'s a summer adventure filled with natural beauty and photographic opportunities.', '#418BA8')"/>
 
 
     <div class="activityTextbox">
@@ -217,8 +219,8 @@
             and explore charming island communities.</p>
     </div>
 
-    <img class="activityImage" src="images/Summer%203.png"/>
-    <!-- Add content -->
+    <img class="activityImage" src="images/Summer%203.png" ; onclick="openModal('Ferry to the San Juan Islands', 'images/Summer%203.png', 'Escape the city\'s hustle and bustle with a ferry ride to the picturesque San Juan Islands. Summer is the best time to explore these idyllic islands, where you can spot majestic whales, kayak in pristine waters, and discover charming island communities. Whether you seek wildlife encounters or a taste of island culture, a visit to the San Juan Islands promises a rejuvenating escape in the heart of the Pacific Northwest.', '#418BA8')"/>
+
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -227,19 +229,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 
 </body>
 
